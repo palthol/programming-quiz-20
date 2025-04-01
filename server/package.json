@@ -5,8 +5,7 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && npm run copy-json",
-    "copy-json": "copyfiles -u 1 \"src/seeds/*.json\" dist/",
+    "build": "tsc",
     "seed": "node dist/seeds/seed.js",
     "start": "node dist/server.js",
     "watch": "nodemon dist/server.js",
@@ -22,7 +21,6 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.8",
-    "copyfiles": "^2.4.1",
     "dotenv": "^16.4.5",
     "msw": "^2.3.1",
     "nodemon": "^3.1.0",
